@@ -15,9 +15,25 @@ body {
   grid-template-columns: 1fr, 1fr;
   grid-template-areas:
     "banner banner"
-    "col1 col2"
+    "col1 col2";
+  gap: 1rem;
 }
 
-header {
+.banner {
+  grid-area: banner;
+}
 
+.banner-text {
+  grid-area: banner;
+  align-self: end;
+  color: #fff;
+  padding:
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  color: ##30658d;
 }
