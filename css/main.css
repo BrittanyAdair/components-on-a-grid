@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-family: "Patua One", sans-serif;
 }
 
 *,
@@ -13,6 +14,25 @@ img {
 }
 
 header {
-  /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-areas:
+    "banner banner"
+    "col1 col2";
+  gap: 1rem;
+}
+
+.banner {
+  grid-area: banner;
+}
+
+li {
+  list-style-type: none;
+  color: #fff;
 }
