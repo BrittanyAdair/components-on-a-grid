@@ -17,7 +17,24 @@ header {
   display: contents;
 }
 
-body {
+.banner {
+  grid-area: banner;
+}
+
+h1 {
+  grid-area: banner;
+  align-self: end;
+  color: #fff;
+}
+
+nav {
+  list-style-type: none;
+  color: #fff;
+  align-items: flex-end;
+
+}
+
+main {
   margin: 0;
   padding: 0;
   display: grid;
@@ -26,13 +43,4 @@ body {
     "banner banner"
     "col1 col2";
   gap: 1rem;
-}
-
-.banner {
-  grid-area: banner;
-}
-
-li {
-  list-style-type: none;
-  color: #fff;
 }
